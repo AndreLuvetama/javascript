@@ -1,1 +1,30 @@
 DOM=> Document Object
+document.write('hshshs') => Imprime informações na tela(Janela)
+variavel1 = parseInt(variavel1) => Converte a variavel para Int
+
+variavel1.toString()=> Transforma a variavel em String
+
+https://horadecodar.com.br/exercicios-de-logica-de-programacao-javascript/
+
+Tipos de Eventos =>
+=> Mouse->
+	onclick => => evento disparado depois do clicks
+	ondblclick => evento disparado depois de dois clicks
+	nomouseup => evento disparado depois de soltar o click
+	onmouseover => evento disparado quando o cursor sobre põe a região
+	onmouseout => evento disparado quando o cursor sai da região
+
+=> Formulário
+	onfocus => Quando o o cursor é focado
+	onblur => Quando o elemento perde o foco
+	onchange =>
+=> Janela
+	-> onresize => modifica o tamanho da página
+	-> onscroll => ativa a barra de rolagem
+=> Teclado -> onkeydown, onkeyup, onkeypress
+
+document(API DOM)
+	getElementsById()
+	getElementsByTagName()
+	getElementsByClassName()
+	getElementByName()

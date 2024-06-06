@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moeda</title>
+    <style>
+        button{
+            padding:  20px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="acao()">Converter</button>
+    <section id="resultado">
+        <h1>Conversor do R$ para o US$</h1>
+    </section>
+
+    <script>
+        function acao() {
+        let valor = window.prompt("Informe o valor em R$")
+        let dolar = parseFloat(valor) / 4.9;
+        let res = window.document.getElementById("resultado")
+        res.innerHTML = `O em R$ será ${dolar}`
+
+        }
+    </script>
+
+
+</body>
+</html>

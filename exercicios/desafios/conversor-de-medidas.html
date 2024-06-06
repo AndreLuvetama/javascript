@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de medidas</title>
+    <style>
+        button{
+            padding: 20px 30px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="converter()">Converter</button>
+    <section  id="resultado">
+            
+    </section>
+
+    <script>
+            function converter(){
+                let metros = window.prompt('Informe o valor em m2');
+                let km = parseFloat(metros)/ 1000;
+                let cm = parseFloat(metros) *100;
+                let hm = parseFloat(metros)/100;
+                let dac = parseFloat(metros)/10;
+                let dec = parseFloat(metros)*10;
+                let mm = parseFloat(metros)*1000;
+                let res = window.document.getElementById("resultado");
+                res.innerHTML = `<b>A distância de ${metros} de metros corresponde a </b>:<br>
+                ${km} quilómetros km <br>
+                ${cm} centimetros cm <br>
+                ${hm} hectometros hm <br>
+                ${dac} decametros dac <br>
+                ${dec} decimetros dec <br>
+                ${mm} milimetros mm <br>`
+            }
+
+    </script>
+    
+</body>
+</html>

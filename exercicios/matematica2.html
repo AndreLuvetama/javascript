@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematica</title>
+</head>
+<body>
+<script>
+        var num1 = window.prompt('Informe o primeiro numero');
+        var num2 = window.prompt('Informe o segundo numero');
+        var op  = window.prompt('Informe a operação');
+        
+        var res = 0;
+        var operacao ='';
+
+        switch(parseInt(op)){
+            case 1:
+                window.alert("Soma de valores")
+                window.alert(`${num1 } + ${num2} = ` + (parseInt(num1) + parseInt(num2)));
+                break;
+            case 2:
+                 window.alert("Divisão de valores")
+                 window.alert(`${num1 } / ${num2} = ` + (parseFloat(num1) / parseFloat(num2)));
+                 break;
+            case 3:
+                 window.alert("Multiplicação de valores")
+                 window.alert(`${num1 } x ${num2} = ` + (parseFloat(num1) * parseFloat(num2)));
+                 break;
+            case 3:
+                 window.alert("Subtração de valores")
+                 window.alert(`${num1 } - ${num2} = ` + (parseFloat(num1) - parseFloat(num2)));
+                 break;
+        default:
+        operacao ="Operação inexistente"
+        window.alert(operacao)
+                
+        }
+
+
+</script>
+    
+</body>
+</html>

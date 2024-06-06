@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ante cessor & Sucessor</title>
+
+    <style>
+        button{
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="acao()" >Antecessor & Sucessor</button>
+
+    <script>
+        function acao(){
+            let numero = window.prompt("Informe o número");
+            let numero01 = parseInt(numero) -1;
+            let numero02 = parseInt(numero) + 1;
+            window.alert(`Antecessor ${numero01} /Número informado ${numero}/Sucessor ${numero02}`)
+        }
+    </script>
+    
+</body>
+</html>

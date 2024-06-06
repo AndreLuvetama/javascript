@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <style>
+        button{
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="converter()">Converter T</button>
+    <section id="resultado"></section>
+    <script>
+        function converter(){
+            let valor = window.prompt("Informe o valor")
+            let kelvin = parseFloat(valor) + 273;
+            let farahet = (parseFloat(valor) * 1.8) + 32;
+            let res = window.document.getElementById("resultado");
+            res.innerHTML= `O valor ${valor} C em: <br>
+            ${kelvin}'K(Kelvin) <br>
+            ${farahet}F(Farahet)`
+
+        }
+    </script>
+</body>
+</html>

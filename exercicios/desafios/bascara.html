@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Báscara</title>
+    <style>
+        button{
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="acao()"></button>
+    <section id="resultado">
+    
+    </section>
+    <script>
+        let a = window.prompt("Informe o valor de a")
+        let b = window.prompt("Informe o valor de b")
+        let c = window.prompt("Informe o valor de c")
+        let delta = Math.pow(b,2) - 4*a*c;
+        let raiz1 = -b - Math.sqrt(delta)
+        let raiz2 = -b + Math.sqrt(delta)
+
+        let result = window.document.getElementById("resultado")
+        result.innerHTML = `O valor da raiz1 é ${raiz1}. <br>Valor da raiz2 ${raiz2} <br> Valor do delta ${delta}`
+
+
+    </script>
+    
+</body>
+</html>

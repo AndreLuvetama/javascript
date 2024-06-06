@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste de salário</title>
+    <style>
+        button{
+            padding: 20px  30px;
+        }
+    </style>
+</head>
+<button onclick="acao()">Reajuste de salário</button>
+<section id="resultado"></section>
+
+<script>
+    function acao() {
+        let nome = window.prompt("Informe o nome do funcionario")
+        let salario = window.prompt("Informe o salário")
+        let porc = window.prompt("Informe a porcentagem")
+        let salarioAjustado = parseFloat(salario) + ((parseFloat(salario)*parseFloat(porc))/100);
+        let aumento = salarioAjustado - salario;
+        let res = window.document.getElementById("resultado");
+            res.innerHTML = `O salário era ${salario} <br> 
+            Com um aumento de ${porc}%, o salário vai aumentar ${aumento} no próximo més<br>
+            e será atualizado  para  ${salarioAjustado}`            
+    }
+</script>
+
+<body>
+
+    
+</body>
+</html>

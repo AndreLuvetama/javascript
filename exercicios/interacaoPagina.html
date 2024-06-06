@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com a página</title>
+    <style>
+        button{
+            padding: 10px 30px;
+            color: black;
+            margin-bottom: 10px;
+            border: 2px solid #F54676;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="interacao()">Clique</button>
+    <script>
+        function interacao(){
+            let nome= window.prompt('Informe o nome')
+            let res = window.document.getElementById('resultado')
+            //Altera o conteudo do body
+            res.innerHTML = `<span> Você digitou <b> ${nome}</b>, parabéns!!! </span>`
+            
+        }
+    </script>
+
+    <section id="resultado">
+        <span> Aqui teremos o resultado esperado... </span>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ação com botão</title>
+    <style>
+        button{
+            padding: 20px 30px;
+            color: coral;
+            border: 2px solid rgb(212, 231, 39);
+            box-shadow: 2px 2px 2px rgb(198, 201, 214);
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="acao1()">AÇÃO 1</button>
+    <button onclick="acao2()">AÇÃO 2</button>
+    <button onclick="acao3()">AÇÃO 3</button>
+    <button onclick="acao4()">AÇÃO 4</button>
+    <button onclick="acao5()">AÇÃO 5</button>
+    <button onclick="limpar()">Limpar a tela</button>
+
+    <section id="saida">
+        <p>Aqui vou registrar as suas ações!!!</p>
+    </section>
+
+    <script>
+        let acao = window.document.getElementById("saida");
+
+        function acao1(){
+            acao.innerHTML += '<p>Você clicou no primeiro botão <p/>'
+        }
+        function acao2(){
+            acao.innerHTML += '<p>Você clicou no segundo botão <p/>'
+        }
+        function acao3(){
+            acao.innerHTML += '<p>Você clicou no terceiro botão <p/>'
+        }
+        function acao4(){
+            acao.innerHTML += '<p>Você clicou no quarto botão <p/>'
+        }
+        function acao5(){
+            acao.innerHTML += '<p>Você clicou no quinto botão <p/>'
+        }
+        function limpar(){
+            document.getElementById("saida").innerHTML += "";
+        }
+
+
+    </script>
+    
+</body>
+</html>

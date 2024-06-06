@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas vindas</title>
+    <style>
+        button{
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="informar()">Informar</button>
+    <script>
+       function informar(){
+        let nome= window.prompt("Informe o nome");
+        let idade = window.prompt("Informe o idade");
+        window.alert(`Olá informamos a presença de ${nome} que está com ${idade} anos de idade, seja Seja Bem vindo!!!`);
+       }
+    </script>
+    
+</body>
+</html>

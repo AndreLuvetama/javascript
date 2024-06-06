@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descontro de 10%</title>
+    <style>
+        button{
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="acao()">Desconto de 10%</button>
+    <section id="resultado"></section>
+
+    <script>
+        function acao() {
+            let produto = window.prompt("Informe o nome do produto")
+            let preco = window.prompt("Informe o preço do produto")
+
+            let valorFinal = parseFloat(preco) - (10*preco/100);
+            let res = window.document.getElementById("resultado");
+                res.innerHTML = `Você  comprou ${produto} no valor de ${preco} e teve desconto de 10%<br>
+                Valor final de ${valorFinal}`            
+        }
+    </script>
+    
+</body>
+</html>
